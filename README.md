@@ -1,2 +1,84 @@
 # BUILDING-A-NETWORK-Packet-Tracer---Create-a-Simple-Network
 Building a Network Activity 2
+
+## Objective
+
+The purpose of this activity is to guide you through building a simple network using Packet Tracer in the Logical Workspace. This will involve two main tasks: first, constructing the network; and second, configuring the end devices and verifying their connectivity.
+
+### Skills Learned
+
+- Deployment and connection of network devices in the Logical Workspace.
+- Customization of display names for network devices.
+- Configuration of end devices and verification of connectivity.
+
+### Tools Used
+
+- Cisco Packet Tracer
+
+## Steps
+
+### 1. Build a Simple Network
+Build a simple network by deploying and connecting the network devices in the Logical Workspace.
+
+- Add a PC, laptop, and a cable modem to the Logical Workspace.
+
+A *cable modem* is a hardware device that allows communications with an Internet Service Provider (ISP). The coaxial cable from the ISP is connected to the cable modem, and an Ethernet cable from the local network is also connected. The cable modem converts the coaxial connection to an Ethernet connection.
+
+- Change the display names of the network devices in the Config tab to: PC, Laptop, and Cable Modem.
+
+-  Add the physical cabling between devices on the workspace.
+
+   - Attach a copper straight-through cable to the FastEthernet0 interface of the PC and the Ethernet 1 interface of the wireless router.
+
+   - Attach a copper straight-through cable to the internet interface of the wireless router and the Port 1 interface of the cable modem.
+
+   - Attach a copper straight-through cable to the Port 0 interface of the cable modem and the Coaxial 7 interface of the internet cloud.
+
+### 2. Configure the End Devices and Verify Connectivity
+In this part, you will connect a PC and a laptop to the Wireless router. The PC will be connected to the network using an Ethernet cable. For the Laptop, you will replace the wired Ethernet network interface card (NIC) with a wireless NIC and connect the Laptop to the router wirelessly.
+In addition, you will verify connectivity to cisco.srv and check that the PC and the Laptop are assigned an IP (Internet Protocol) address. 
+
+*Internet Protocol* is a set of rules for routing and addressing data on the internet. The *IP addresses* are used to identify the devices on a network and allow the devices to connect and transfer data on a network.
+
+- Click the PC and navigate to IP Configuration in the Desktop tab to verify that DHCP is enabled and the PC has received an IP address. 
+
+- Select DHCP for the IP Configuration heading if you do not see an IP address for the IPv4 Address field. 
+
+- Observe the process as the PC is receiving an IP address from the DHCP server.
+
+*DHCP* stands for *dynamic host configuration protocol*. This protocol assigns IP addresses to devices dynamically. In this simple network, the Wireless Router is configured to assign IP addresses to devices that request IP addresses. If DHCP is disabled, you will need to assign an IP address and configure all the necessary information to communicate with other devices on the network and the internet.
+
+- Close IP Configuration and in the Desktop tab, click Command Prompt.
+
+- At the prompt, enter ### ipconfig /all ### to review the IPv4 addressing information from the DHCP server. The PC should have received an IPv4 address in the 192.168.0.x range.
+
+*Note*: There are two types of IP addresses: IPv4 and IPv6. An *IPv4 (internet protocol version 4)* address is a string of numbers in the form of x.x.x.x as you have been using in this lab. As the internet grew, the need for more IP addresses became necessary. So *IPv6 (internet protocol version 6)* was introduced in the late 1990s to address the limitations of IPv4. The details of IPv6 addressing are beyond the scope of this activity.
+
+- Test connectivity to the cisco.srv from the PC. From the command prompt, issue the command ping cisco.srv. It may take a few seconds for the ping to return. Four replies should be received.
+
+- Click Laptop, and select the Physical tab.
+
+- In the Physical tab, you will need to remove the Ethernet copper module and replace it with the Wireless WPC300N module.
+
+- Power off Laptop by clicking the power button on the side of the laptop.
+
+- Remove the currently installed Ethernet copper module by clicking on the module on the side of the laptop and dragging it to the MODULES pane on the left of the laptop window.
+
+- Install the wireless WPC300N module by clicking it in the MODULES pane and dragging it to the empty module port on the side of the Laptop.
+
+- Power on the Laptop by clicking the Laptop power button again.
+
+- With the wireless module installed, connect the Laptop to the wireless network. Click the Desktop tab and select the PC Wireless.
+
+- Select the Connect tab. After a slight delay, the wireless network HomeNetwork will be visible in the list of wireless networks. Click Refresh if necessary to see the list of available networks. Select the HomeNetwork. Click Connect.
+
+- Close PC Wireless. Select Web Browser in the Desktop tab.
+
+- In the Web Browser, navigate to cisco.srv.
+
+
+
+
+
+
+
