@@ -62,15 +62,15 @@ In addition, you will verify connectivity to *cisco.srv* and check that the PC a
 
 7. Click Laptop, and select the Physical tab.
 
-      - In the Physical tab, you will need to remove the Ethernet copper module and replace it with the Wireless WPC300N module.
+      1. In the Physical tab, you will need to remove the Ethernet copper module and replace it with the Wireless WPC300N module.
 
-      - Power off Laptop by clicking the power button on the side of the laptop.
+      2. Power off Laptop by clicking the power button on the side of the laptop.
 
-      - Remove the currently installed Ethernet copper module by clicking on the module on the side of the laptop and dragging it to the MODULES pane on the left of the laptop window.
+      3. Remove the currently installed Ethernet copper module by clicking on the module on the side of the laptop and dragging it to the MODULES pane on the left of the laptop window.
 
-      - Install the wireless WPC300N module by clicking it in the MODULES pane and dragging it to the empty module port on the side of the Laptop.
+      4. Install the wireless WPC300N module by clicking it in the MODULES pane and dragging it to the empty module port on the side of the Laptop.
 
-      - Power on the Laptop by clicking the Laptop power button again.
+      5. Power on the Laptop by clicking the Laptop power button again.
 
 8. With the wireless module installed, connect the Laptop to the wireless network. Click the Desktop tab and select the PC Wireless.
 
