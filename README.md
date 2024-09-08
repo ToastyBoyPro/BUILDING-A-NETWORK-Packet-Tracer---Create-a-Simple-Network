@@ -25,7 +25,10 @@ Build a simple network by deploying and connecting the network devices in the Lo
 1. Add a PC, laptop, and a cable modem to the Logical Workspace.
 
 2. Change the display names of the network devices in the Config tab to: PC, Laptop, and Cable Modem.
-   
+
+![Packet Tracer - Create a Simple Network - Build a Simple Network - Change display names of the network devices - 3](https://github.com/user-attachments/assets/5fecafa8-2318-4685-8a22-e7d6758c5437) <br>
+*Ref 1: Network Layout*.
+
 > A **cable modem** is a hardware device that allows communications with an Internet Service Provider (ISP). The coaxial cable from the ISP is connected to the cable modem, which is connected to the local network through an ethernet cable. The cable modem converts the coaxial connection to an Ethernet connection.
 
 3.  Add the physical cabling between devices on the workspace.
