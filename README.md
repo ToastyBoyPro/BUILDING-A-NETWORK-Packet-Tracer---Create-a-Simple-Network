@@ -26,7 +26,9 @@ Build a simple network by deploying and connecting the network devices in the Lo
 
 2. Change the display names of the network devices in the Config tab to: PC, Laptop, and Cable Modem.
 
-![Packet Tracer - Create a Simple Network - Build a Simple Network - Change display names of the network devices - 3a](https://github.com/user-attachments/assets/595e0dba-48a7-495f-a7c9-e7108c9d8673) <br>
+  <img src="https://github.com/user-attachments/assets/595e0dba-48a7-495f-a7c9-e7108c9d8673" 
+    alt="Network Layout"
+    width="525" height="225"> <br>
 *Ref 1: Network Layout*.
 
 > A **cable modem** is a hardware device that allows communications with an Internet Service Provider (ISP). The coaxial cable from the ISP is connected to the cable modem, which is connected to the local network through an ethernet cable. The cable modem converts the coaxial connection to an Ethernet connection.
