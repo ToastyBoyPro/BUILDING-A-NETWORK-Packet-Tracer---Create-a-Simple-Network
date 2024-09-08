@@ -26,10 +26,10 @@ Build a simple network by deploying and connecting the network devices in the Lo
 
 2. Change the display names of the network devices in the Config tab to: PC, Laptop, and Cable Modem.
 
-  <img src="https://github.com/user-attachments/assets/595e0dba-48a7-495f-a7c9-e7108c9d8673" 
+    <img src="https://github.com/user-attachments/assets/595e0dba-48a7-495f-a7c9-e7108c9d8673" 
     alt="Network Layout"
     width="525" height="225"> <br>
-*Ref 1: Network Layout*.
+    *Ref 1: Network Layout*.
 
 > A **cable modem** is a hardware device that allows communications with an Internet Service Provider (ISP). The coaxial cable from the ISP is connected to the cable modem, which is connected to the local network through an ethernet cable. The cable modem converts the coaxial connection to an Ethernet connection.
 
@@ -41,10 +41,10 @@ Build a simple network by deploying and connecting the network devices in the Lo
 
       3. Attach a coaxial cable to the Port 0 interface of the cable modem and the Coaxial 7 interface of the internet cloud.
 
-  <img src="https://github.com/user-attachments/assets/c3dde095-bf3b-4ee1-aa92-31409d349b29"
+    <img src="https://github.com/user-attachments/assets/c3dde095-bf3b-4ee1-aa92-31409d349b29"
     alt="Network Device Connections"
     width="528" height="223"> <br>
-*Ref 2: Network Device Connections*.
+    *Ref 2: Network Device Connections*.
 
 ### 2. Configure the End Devices and Verify Connectivity
 Connect to the Wireless Router with a PC using an Ethernet cable and with a laptop after replacing the wired Ethernet network interface card (NIC) with a wireless NIC.
@@ -60,10 +60,10 @@ Verify connectivity to *cisco.srv* and check that the PC and the Laptop are assi
 
 3. Observe the process as the PC is receiving an IP address from the DHCP server.
 
-  <img src="https://github.com/user-attachments/assets/be3d5a5e-8833-4616-9e10-c3311e48dfa4"
+    <img src="https://github.com/user-attachments/assets/be3d5a5e-8833-4616-9e10-c3311e48dfa4"
     alt="Configuring the IP for PC"
     width="306" height="270"> <br>
-*Ref 3: Configuring the IP for PC*.
+    *Ref 3: Configuring the IP for PC*.
 
 > **DHCP** stands for dynamic host configuration protocol. This protocol assigns IP addresses to devices dynamically. In this simple network, the Wireless Router is configured to assign IP addresses to devices that request IP addresses. If DHCP is disabled, you will need to assign an IP address and configure all the necessary information to communicate with other devices on the network and the internet.
 
@@ -71,19 +71,19 @@ Verify connectivity to *cisco.srv* and check that the PC and the Laptop are assi
 
 5. At the prompt, enter  `ipconfig /all` to review the IPv4 addressing information from the DHCP server. The PC should have received an IPv4 address in the 192.168.0.x range.
 
-  <img src="https://github.com/user-attachments/assets/c38b3c33-c166-435a-9358-898f90ae92de"
+    <img src="https://github.com/user-attachments/assets/c38b3c33-c166-435a-9358-898f90ae92de"
     alt="IPv4 Assignment Verification"
     width="344" height="286"> <br>
-*Ref 4: IPv4 Assignment Verification*.
+    *Ref 4: IPv4 Assignment Verification*.
 
 > **Note**: There are two types of IP addresses: IPv4 and IPv6. An **IPv4 (internet protocol version 4)** address is a string of numbers in the form of x.x.x.x. IP addresses for the end devices can range from 192.168.0.2 to 192.168.0.254. **IPv6 (internet protocol version 6)** was introduced in the late 1990s to address the  growing internet and limitations of IPv4. The details of IPv6 addressing are beyond the scope of this activity. Each NIC will get a unique IP address in the same network.
 
 6. Test connectivity to the *cisco.srv* from the PC. From the command prompt, issue the command `ping cisco.srv`. It may take a few seconds for the ping to return. Four replies should be received.
 
-     <img src="https://github.com/user-attachments/assets/749a226f-e5f6-44e6-9293-bab6ec09027b"
+    <img src="https://github.com/user-attachments/assets/749a226f-e5f6-44e6-9293-bab6ec09027b"
     alt="Pinging the Cisco Server"
     width="439" height="444"> <br>
-                            *Ref 5: Pinging the Cisco Server*.
+    *Ref 5: Pinging the Cisco Server*.
 
 7. In the Laptop, replace the wired Ethernet network interface card (NIC) with a wireless NIC.
    
@@ -103,18 +103,18 @@ Verify connectivity to *cisco.srv* and check that the PC and the Laptop are assi
 
       2. Select the Connect tab. After a slight delay, the wireless network *HomeNetwork* will be visible in the list of wireless networks. Click Refresh if necessary to see the list of available networks. Select the *HomeNetwork* and click Connect.
 
-  <img src="https://github.com/user-attachments/assets/bc4bb8da-b043-4efe-982a-e5eb307fe3bc"
+    <img src="https://github.com/user-attachments/assets/bc4bb8da-b043-4efe-982a-e5eb307fe3bc"
     alt="Connecting to the Wireless Network"
     width="303" height="193"> <br>
-*Ref 6: Connecting to the Wireless Network*.
+    *Ref 6: Connecting to the Wireless Network*.
 
 9. Close PC Wireless. Select Web Browser in the Desktop tab.
 
 10. In the Web Browser, navigate to *cisco.srv*.
 
-  <img src="https://github.com/user-attachments/assets/c582fe1e-253e-485c-b024-507ee69271e6"
+    <img src="https://github.com/user-attachments/assets/c582fe1e-253e-485c-b024-507ee69271e6"
     alt="Navigating to the Cisco Site"
     width="521" height="239"> <br>
-*Ref 7: Navigating to the Cisco Site*.
+    *Ref 7: Navigating to the Cisco Site*.
 
 > The **default gateway** is analogous to the street intersection. The traffic from the 192.168.0 street has to exit through the intersection to another street. Another street is another network. In this network, default gateway is the wireless router that directs the traffic from the local network to the cable modem, and the traffic is then sent to the ISP.
