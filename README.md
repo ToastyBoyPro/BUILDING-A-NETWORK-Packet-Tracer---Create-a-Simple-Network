@@ -62,7 +62,7 @@ Verify connectivity to *cisco.srv* and check that the PC and the Laptop are assi
 
   <img src="https://github.com/user-attachments/assets/be3d5a5e-8833-4616-9e10-c3311e48dfa4"
     alt="Configuring the IP for PC"
-    width="528" height="223"> <br>
+    width="306" height="270"> <br>
 *Ref 3: Configuring the IP for PC*.
 
 > **DHCP** stands for dynamic host configuration protocol. This protocol assigns IP addresses to devices dynamically. In this simple network, the Wireless Router is configured to assign IP addresses to devices that request IP addresses. If DHCP is disabled, you will need to assign an IP address and configure all the necessary information to communicate with other devices on the network and the internet.
