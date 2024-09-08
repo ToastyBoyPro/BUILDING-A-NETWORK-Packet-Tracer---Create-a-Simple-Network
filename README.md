@@ -37,10 +37,10 @@ Build a simple network by deploying and connecting the network devices in the Lo
       3. Attach a copper straight-through cable to the Port 0 interface of the cable modem and the Coaxial 7 interface of the internet cloud.
 
 ### 2. Configure the End Devices and Verify Connectivity
-In this part, you will connect a PC and a laptop to the Wireless router. The PC will be connected to the network using an Ethernet cable. For the Laptop, you will replace the wired Ethernet network interface card (NIC) with a wireless NIC and connect the Laptop to the router wirelessly.
-In addition, you will verify connectivity to *cisco.srv* and check that the PC and the Laptop are assigned an IP (Internet Protocol) address. 
+Connect to the Wireless Router with a PC using an Ethernet cable and with a laptop after replacing the wired Ethernet network interface card (NIC) with a wireless NIC.
+Verify connectivity to *cisco.srv* and check that the PC and the Laptop are assigned an IP (Internet Protocol) address. 
 
-> **Internet Protocol** is a set of rules for routing and addressing data on the internet. The **IP addresses** are used to identify the devices on a network and allow the devices to connect and transfer data on a network.
+> **Internet Protocol** is a set of rules for routing and addressing data on the internet. **IP addresses** are used to identify the devices on a network and allow the devices to connect and transfer data on a network.
 
 1. Click the PC and navigate to IP Configuration in the Desktop tab to verify that DHCP is enabled and the PC has received an IP address. 
 
@@ -54,7 +54,7 @@ In addition, you will verify connectivity to *cisco.srv* and check that the PC a
 
 5. At the prompt, enter  `ipconfig /all` to review the IPv4 addressing information from the DHCP server. The PC should have received an IPv4 address in the 192.168.0.x range.
 
-> **Note**: There are two types of IP addresses: IPv4 and IPv6. An **IPv4 (internet protocol version 4)** address is a string of numbers in the form of x.x.x.x as you have been using in this lab. As the internet grew, the need for more IP addresses became necessary. So **IPv6 (internet protocol version 6)** was introduced in the late 1990s to address the limitations of IPv4. The details of IPv6 addressing are beyond the scope of this activity. IP addresses for the end devices can range from 192.168.0.2 to 192.168.0.254. Each NIC will get a unique IP address in the same network.
+> **Note**: There are two types of IP addresses: IPv4 and IPv6. An **IPv4 (internet protocol version 4)** address is a string of numbers in the form of x.x.x.x. IP addresses for the end devices can range from 192.168.0.2 to 192.168.0.254. **IPv6 (internet protocol version 6)** was introduced in the late 1990s to address the  growing internet and limitations of IPv4. The details of IPv6 addressing are beyond the scope of this activity. Each NIC will get a unique IP address in the same network.
 
 6. Test connectivity to the *cisco.srv* from the PC. From the command prompt, issue the command `ping cisco.srv`. It may take a few seconds for the ping to return. Four replies should be received.
 
@@ -72,14 +72,16 @@ In addition, you will verify connectivity to *cisco.srv* and check that the PC a
 
       6. Power on the Laptop by clicking the Laptop power button again.
 
-8. With the wireless module installed, connect the Laptop to the wireless network. Click the Desktop tab and select the PC Wireless.
+8. With the wireless module installed, connect the Laptop to the wireless network.
+   
+      1. Click the Desktop tab and select the PC Wireless.
 
-9. Select the Connect tab. After a slight delay, the wireless network *HomeNetwork* will be visible in the list of wireless networks. Click Refresh if necessary to see the list of available networks. Select the *HomeNetwork*. Click Connect.
+      2. Select the Connect tab. After a slight delay, the wireless network *HomeNetwork* will be visible in the list of wireless networks. Click Refresh if necessary to see the list of available networks. Select the *HomeNetwork*. Click Connect.
 
-10. Close PC Wireless. Select Web Browser in the Desktop tab.
+9. Close PC Wireless. Select Web Browser in the Desktop tab.
 
-11. In the Web Browser, navigate to *cisco.srv*.
+10. In the Web Browser, navigate to *cisco.srv*.
 
-> The **subnet mask** is used to differentiate the host and the network ID portion of the IP address. You can relate the IP address to your street address. The subnet mask defines the length of the street name. The network part of the address is your street, 192.168.0. The house number is the host port of the IP address. For the IP address 192.168.0.2, the house number is 2 and the street is 192.168.0. If there is more than one house on the same street, for example, house number 3, will have an address 192.168.0.3. The maximum number of houses on this street is 253, ranging from 2 to 254.
+> The **subnet mask** is used to differentiate the host and the network ID portion of the IP address. You can relate the IP address to your street address. The network ID part of the address is your street, 192.168.0. The house number is the host port of the IP address. For the IP address 192.168.0.2, the house number is 2 and the street is 192.168.0. If there is more than one house on the same street, for example, house number 3, will have an address 192.168.0.3. The maximum number of houses on this street is 253, ranging from 2 to 254.
 
 > The **default gateway** is analogous to the street intersection. The traffic from the 192.168.0 street has to exit through the intersection to another street. Another street is another network. In this network, default gateway is the wireless router that directs the traffic from the local network to the cable modem, and the traffic is then sent to the ISP.
