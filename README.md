@@ -26,7 +26,7 @@ Build a simple network by deploying and connecting the network devices in the Lo
 
 2. Change the display names of the network devices in the Config tab to: PC, Laptop, and Cable Modem.
    
-> A **cable modem** is a hardware device that allows communications with an Internet Service Provider (ISP). The coaxial cable from the ISP is connected to the cable modem, and an Ethernet cable from the local network is also connected. The cable modem converts the coaxial connection to an Ethernet connection.
+> A **cable modem** is a hardware device that allows communications with an Internet Service Provider (ISP). The coaxial cable from the ISP is connected to the cable modem, which is connected to the local network through an ethernet cable. The cable modem converts the coaxial connection to an Ethernet connection.
 
 3.  Add the physical cabling between devices on the workspace.
 
@@ -41,6 +41,8 @@ Connect to the Wireless Router with a PC using an Ethernet cable and with a lapt
 Verify connectivity to *cisco.srv* and check that the PC and the Laptop are assigned an IP (Internet Protocol) address. 
 
 > **Internet Protocol** is a set of rules for routing and addressing data on the internet. **IP addresses** are used to identify the devices on a network and allow the devices to connect and transfer data on a network.
+
+> The **subnet mask** is used to differentiate the host and the network ID portion of the IP address. You can relate the IP address to your street address. The network ID part of the address is your street, 192.168.0. The house number is the host port of the IP address. For the IP address 192.168.0.2, the house number is 2 and the street is 192.168.0. If there is more than one house on the same street, for example, house number 3, will have an address 192.168.0.3. The maximum number of houses on this street is 253, ranging from 2 to 254.
 
 1. Click the PC and navigate to IP Configuration in the Desktop tab to verify that DHCP is enabled and the PC has received an IP address. 
 
@@ -62,26 +64,22 @@ Verify connectivity to *cisco.srv* and check that the PC and the Laptop are assi
    
       1. Click Laptop, and select the Physical tab.
 
-      2. In the Physical tab, you will need to remove the Ethernet copper module and replace it with the Wireless WPC300N module.
+      2. Power off Laptop by clicking the power button on the side of the laptop.
 
-      3. Power off Laptop by clicking the power button on the side of the laptop.
+      3. Remove the currently installed Ethernet copper module by clicking on the module on the side of the laptop and dragging it to the MODULES pane on the left of the laptop window.
 
-      4. Remove the currently installed Ethernet copper module by clicking on the module on the side of the laptop and dragging it to the MODULES pane on the left of the laptop window.
+      4. Install the wireless WPC300N module by clicking it in the MODULES pane and dragging it to the empty module port on the side of the Laptop.
 
-      5. Install the wireless WPC300N module by clicking it in the MODULES pane and dragging it to the empty module port on the side of the Laptop.
-
-      6. Power on the Laptop by clicking the Laptop power button again.
+      5. Power on the Laptop by clicking the Laptop power button again.
 
 8. With the wireless module installed, connect the Laptop to the wireless network.
    
       1. Click the Desktop tab and select the PC Wireless.
 
-      2. Select the Connect tab. After a slight delay, the wireless network *HomeNetwork* will be visible in the list of wireless networks. Click Refresh if necessary to see the list of available networks. Select the *HomeNetwork*. Click Connect.
+      2. Select the Connect tab. After a slight delay, the wireless network *HomeNetwork* will be visible in the list of wireless networks. Click Refresh if necessary to see the list of available networks. Select the *HomeNetwork* and click Connect.
 
 9. Close PC Wireless. Select Web Browser in the Desktop tab.
 
 10. In the Web Browser, navigate to *cisco.srv*.
-
-> The **subnet mask** is used to differentiate the host and the network ID portion of the IP address. You can relate the IP address to your street address. The network ID part of the address is your street, 192.168.0. The house number is the host port of the IP address. For the IP address 192.168.0.2, the house number is 2 and the street is 192.168.0. If there is more than one house on the same street, for example, house number 3, will have an address 192.168.0.3. The maximum number of houses on this street is 253, ranging from 2 to 254.
 
 > The **default gateway** is analogous to the street intersection. The traffic from the 192.168.0 street has to exit through the intersection to another street. Another street is another network. In this network, default gateway is the wireless router that directs the traffic from the local network to the cable modem, and the traffic is then sent to the ISP.
