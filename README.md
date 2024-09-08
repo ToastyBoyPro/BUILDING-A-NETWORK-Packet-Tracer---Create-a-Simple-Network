@@ -80,10 +80,10 @@ Verify connectivity to *cisco.srv* and check that the PC and the Laptop are assi
 
 6. Test connectivity to the *cisco.srv* from the PC. From the command prompt, issue the command `ping cisco.srv`. It may take a few seconds for the ping to return. Four replies should be received.
 
-  <img src="https://github.com/user-attachments/assets/749a226f-e5f6-44e6-9293-bab6ec09027b"
+     <img src="https://github.com/user-attachments/assets/749a226f-e5f6-44e6-9293-bab6ec09027b"
     alt="Pinging the Cisco Server"
     width="439" height="444"> <br>
-*Ref 5: Pinging the Cisco Server*.
+                            *Ref 5: Pinging the Cisco Server*.
 
 7. In the Laptop, replace the wired Ethernet network interface card (NIC) with a wireless NIC.
    
