@@ -54,23 +54,23 @@ In addition, you will verify connectivity to *cisco.srv* and check that the PC a
 
 5. At the prompt, enter  `ipconfig /all` to review the IPv4 addressing information from the DHCP server. The PC should have received an IPv4 address in the 192.168.0.x range.
 
-> **Note**: There are two types of IP addresses: IPv4 and IPv6. An **IPv4 (internet protocol version 4)** address is a string of numbers in the form of x.x.x.x as you have been using in this lab. As the internet grew, the need for more IP addresses became necessary. So **IPv6 (internet protocol version 6)** was introduced in the late 1990s to address the limitations of IPv4. The details of IPv6 addressing are beyond the scope of this activity.
-
-> **Note**:The IP addresses for the end devices can range from 192.168.0.2   192.168.0.254. Each NIC will get a unique IP address in the same network.
+> **Note**: There are two types of IP addresses: IPv4 and IPv6. An **IPv4 (internet protocol version 4)** address is a string of numbers in the form of x.x.x.x as you have been using in this lab. As the internet grew, the need for more IP addresses became necessary. So **IPv6 (internet protocol version 6)** was introduced in the late 1990s to address the limitations of IPv4. The details of IPv6 addressing are beyond the scope of this activity. IP addresses for the end devices can range from 192.168.0.2 to 192.168.0.254. Each NIC will get a unique IP address in the same network.
 
 6. Test connectivity to the *cisco.srv* from the PC. From the command prompt, issue the command `ping cisco.srv`. It may take a few seconds for the ping to return. Four replies should be received.
 
-7. Click Laptop, and select the Physical tab.
+7. In the Laptop, replace the wired Ethernet network interface card (NIC) with a wireless NIC.
+   
+      1. Click Laptop, and select the Physical tab.
 
-      1. In the Physical tab, you will need to remove the Ethernet copper module and replace it with the Wireless WPC300N module.
+      2. In the Physical tab, you will need to remove the Ethernet copper module and replace it with the Wireless WPC300N module.
 
-      2. Power off Laptop by clicking the power button on the side of the laptop.
+      3. Power off Laptop by clicking the power button on the side of the laptop.
 
-      3. Remove the currently installed Ethernet copper module by clicking on the module on the side of the laptop and dragging it to the MODULES pane on the left of the laptop window.
+      4. Remove the currently installed Ethernet copper module by clicking on the module on the side of the laptop and dragging it to the MODULES pane on the left of the laptop window.
 
-      4. Install the wireless WPC300N module by clicking it in the MODULES pane and dragging it to the empty module port on the side of the Laptop.
+      5. Install the wireless WPC300N module by clicking it in the MODULES pane and dragging it to the empty module port on the side of the Laptop.
 
-      5. Power on the Laptop by clicking the Laptop power button again.
+      6. Power on the Laptop by clicking the Laptop power button again.
 
 8. With the wireless module installed, connect the Laptop to the wireless network. Click the Desktop tab and select the PC Wireless.
 
