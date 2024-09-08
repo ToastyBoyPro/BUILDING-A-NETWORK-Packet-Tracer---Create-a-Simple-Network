@@ -41,6 +41,11 @@ Build a simple network by deploying and connecting the network devices in the Lo
 
       3. Attach a copper straight-through cable to the Port 0 interface of the cable modem and the Coaxial 7 interface of the internet cloud.
 
+  <img src="https://github.com/user-attachments/assets/c3dde095-bf3b-4ee1-aa92-31409d349b29"
+    alt="Network Device Connections"
+    width="528" height="223"> <br>
+*Ref 2: Network Device Connections*.
+
 ### 2. Configure the End Devices and Verify Connectivity
 Connect to the Wireless Router with a PC using an Ethernet cable and with a laptop after replacing the wired Ethernet network interface card (NIC) with a wireless NIC.
 Verify connectivity to *cisco.srv* and check that the PC and the Laptop are assigned an IP (Internet Protocol) address. 
